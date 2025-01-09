@@ -5,9 +5,9 @@ import { useGlobalContext } from "../context/global";
 
 function Auth() {
   const { globalState, updateGlobalState } = useGlobalContext();
-  const handleUpdate = () => {
-    updateGlobalState({ userName: "John Doe" });
-  };
+  // const handleUpdate = () => {
+  //   updateGlobalState({ userName: "John Doe" });
+  // };
   return (
     <div className="wrap-container">
       <div className="box">

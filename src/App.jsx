@@ -7,9 +7,8 @@ import { GlobalProvider } from "./context/global";
 
 function App() {
   return (
-    <GlobalProvider>
-      <GetStared />;
-    </GlobalProvider>
+    <GetStared />
+    // </GlobalProvider>
   );
 }
 

@@ -1,6 +1,6 @@
 import supabase from "../integrations/supabaseClient";
 
-async function createBoard(boardName) {
+export async function createBoard(boardName) {
   const code = generateBoardCode();
   const { data, error } = await supabase
     .from("Board")
@@ -11,10 +11,13 @@ async function createBoard(boardName) {
       },
     ])
     .select();
+  if (error) {
+    throw new Error(error);
+  }
   return data;
 }
 
-async function getRecentBoards() {
+export async function getRecentBoards() {
   try {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
@@ -25,7 +28,7 @@ async function getRecentBoards() {
       .gte("created_at", oneWeekAgo.toISOString());
 
     if (error) {
-      throw error;
+      throw new Error(error);
     }
 
     return data;
@@ -35,7 +38,7 @@ async function getRecentBoards() {
   }
 }
 
-async function getBoard(boardCode) {
+export async function getBoard(boardCode) {
   const { data, error } = await supabase
     .from("Boards")
     .select("*")

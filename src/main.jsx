@@ -9,6 +9,7 @@ import Auth from "./pages/auth.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import CreateBoard from "./pages/createBoard.jsx";
 import WhiteBoard from "./pages/whiteBoard.jsx";
+import { GlobalProvider } from "./context/global.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <GlobalProvider>
+      <RouterProvider router={router} />
+    </GlobalProvider>
   </StrictMode>
 );
