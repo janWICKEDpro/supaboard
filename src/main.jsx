@@ -8,6 +8,7 @@ import GetStared from "./pages/GetStarted.jsx";
 import Auth from "./pages/auth.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import CreateBoard from "./pages/createBoard.jsx";
+import WhiteBoard from "./pages/whiteBoard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/create-board",
     element: <CreateBoard />,
+  },
+  {
+    path: "/board:boardId",
+    element: <WhiteBoard />,
   },
 ]);
 
