@@ -9,21 +9,24 @@ import Auth from "./pages/auth.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import CreateBoard from "./pages/createBoard.jsx";
 
-const router = createBrowserRouter([{
-  path: '/',
-  element: <GetStared/>,
-  errorElement: <NotFoundPage/>
-  
-}, {
-  path: '/auth',
-  element: <Auth/>
-}, {
-  path: '/create-board',
-  element: <CreateBoard/>
-}]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <GetStared />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: "/auth",
+    element: <Auth />,
+  },
+  {
+    path: "/create-board",
+    element: <CreateBoard />,
+  },
+]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>
 );
