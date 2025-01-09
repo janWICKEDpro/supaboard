@@ -1,0 +1,138 @@
+.create-board-box{
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    height: 170px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.create-board-box h2 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.create-board-box h3 {
+    color: #6b7a90;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.create-form-contiainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.create-form-input {
+    width: 100%;
+    max-width: 870px;
+    padding: 6px ;
+    font-size: 16px;
+    border: 1px solid #d1d5db; 
+    border-radius: 5px; 
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 15px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-form-input:focus {
+    border-color: black; 
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5); 
+}
+
+
+
+.create-form-button{
+    background-color: #0f172a;
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px; 
+    color: white;
+}
+
+.create-form-button:hover {
+    background-color: #1e293b; 
+    transform: scale(1.02); 
+}
+
+.create-form-button:active {
+    background-color: #0c111f; 
+    transform: scale(0.98); 
+}
+
+.board-container{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 150px;
+}
+
+.first-texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.first-texts h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0f172a;
+}
+.first-texts button{
+    width: 100px;
+}
+
+
+.join-board-box{
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    height: 170px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.join-board-box h2 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.join-board-box h3 {
+    color: #6b7a90;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.join-form-contiainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.join-form-input {
+    width: 100%;
+    max-width: 870px;
+    padding: 6px ;
+    font-size: 16px;
+    border: 1px solid #d1d5db; 
+    border-radius: 5px; 
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 15px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-form-input:focus {
+    border-color: black; 
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5); 
+}
+
+.join-form-button:hover{
+    color: blue;
+}
